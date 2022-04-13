@@ -1,0 +1,10 @@
+// Mixins acá
+
+.mixin-btn(@color:black; @fz: 7rem) {
+    color: @color;
+    font-size: @fz;
+  }
+
+.btn {
+    .mixin-btn(red; 3rem);
+}
