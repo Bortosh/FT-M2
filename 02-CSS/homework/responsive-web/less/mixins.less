@@ -1,10 +1,30 @@
 // Mixins acá
 
-.mixin-btn(@color:black; @fz: 7rem) {
-    color: @color;
-    font-size: @fz;
-  }
+// .mixin-btn(@color:black; @fz: 7rem; @width: 2rem; @heigth: 2rem; @border-radius: 2rem; @bg-color: @btn-bg-color) {
+//     color: @color;
+//     font-size: @fz;
+//     width: @width;
+//     height: @height;
+//     border-radius: @border-radius;
+//     background-color: @bg-color;
 
-.btn {
-    .mixin-btn(red; 3rem);
+//   }
+
+.btn-registrate(@bg-color, @color, @border) {
+  background-color: @btn-bg-color;
+  color: @color;
+  border-color: @border;
+  border-radius: 2rem;
+  cursor: pointer;
+  text-align: center;
+  font-size: 3rem;
+  vertical-align: middle;
+  padding: 2rem;
+  display: inline-block;
+  font-weight: 400;
+
+  &:hover {
+    color: @btn-bg-color;
+    background-color: white;
+  }
 }

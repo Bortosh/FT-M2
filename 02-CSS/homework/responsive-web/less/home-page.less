@@ -29,6 +29,13 @@
       border-radius: 2rem;
       height: 100%;
     }
+
+    @media(max-width: @phone) {
+      .tecnolgia .ondas {
+        display: none;
+      }
+    }
+
   }
 
   .musica-nueva {
@@ -62,6 +69,7 @@
       }
 
       .btn {
+        .btn-registrate(@btn-bg-color, white, @btn-bg-color);
       }
     }
 
